@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ind.css">
     <title>IndieBrew</title>
 
 </head>
@@ -19,7 +20,9 @@
                 <nav class="topright df">
                     <a href="pricing">Pricing</a>
                     <a href="Support">Support</a>
-                    <button>Get Started <span>-it's free</span></button>
+                    <a href="#button">
+                        <button>Get Started <span> -it's  free</span></button>
+                    </a>
                 </nav>
         </header>
         <section class="onemid df">
@@ -27,10 +30,15 @@
                 <h1>Your weekly personal feed digest.</h1>
                 <p>With IndieBrew get personal feeds from resources 
                     all around the web, including Reddit, HackerNews,
-                     IndieHackers, and muchmore.
+                     IndieHackers, and much more.
                 </p>
-                <button>Get Started <span>-it's free</span></button>
-                <img src="Assets/User Avatars.svg" alt="">
+                <div class="buttonimg df column">
+                    <div>
+                        <button>Get Started <span>- it's free</span></button>
+                    </div>
+                    <figure><img src="Assets/User Avatars.svg" alt=""></figure>
+                </div>
+                
                 <figcaption>Join <span>32,642 </span> IndieBrewers in 
                           curating their personal digest. 
                 </figcaption>
@@ -44,7 +52,7 @@
     <main class="two df column">
         <section class="apps df">
             <figcaption>
-                <h2>Curate your feed from dozens of resources.</h2>
+                <h1>Curate your feed from dozens of resources.</h1>
                 <p>We cover all major platforms where one could
                     want to curate their feed from Reddit, 
                     ProductHunt, IndieHackers, and so much
@@ -55,16 +63,21 @@
             <figure><img src="Assets/Social Media Icons.png" alt=""></figure>
         </section>
         <section class="phone df">
-            <figcaption><img src="Assets/Phone Mockup.png" alt=""></figcaption>
-            <h2>Access your feed from the comfort of your phone.</h2>
-            <p>With native apps for both iOS and Android accessing your 
-                curaated content has never been easier.</p>
-            <a href="#waitlist">Sign up for the waitlist →</a>
+            <figure><img src="Assets/Phone Mockup.png" alt=""></figure>
+
+            <figcaption>
+                <h2>Access your feed from the comfort of your phone.</h2>
+                <p>With native apps for both iOS and Android accessing your 
+                    curaated content has never been easier.
+                </p>
+                <a href="#waitlist">Sign up for the waitlist →</a>
+            </figcaption>
+           
         </section>
         
     </main>
     <footer class="df">
-        <section class="indie down">
+        <section class="indiedown">
             <h3>IndieBrew</h3>
             <p>
                 With IndieBrew, get personal feeeds from resources all
@@ -73,29 +86,32 @@
                 <br><br>Made with ♥ in the UK.
             </p>
         </section>
-        <section class="Sitemap df column ">
-            <h3>Sitemap</h3>
-            <a href="#home">Homepage</a>
-            <a href="#pricing">Pricing</a>
+        <section class="downright df">
+            <section class="Sitemap df column ">
+                <h3>Sitemap</h3>
+                <a href="#home">Homepage</a>
+                <a href="#pricing">Pricing</a>
+            </section>
+            <section class="Resources df column ">
+                <h3>Resouces</h3>
+                <a href="#support">Support</a>
+                <a href="#contact">Contact</a>
+                <a href="#faq">FAQ</a>
+            </section>
+            <section class="Company df column ">
+                <h3>Company</h3>
+                <a href="#about">About</a>
+                <a href="#customer">Customers</a>
+                <a href="#blog">Blog</a>
+            </section>
+            <section class="Portfolios df column ">
+                <h3>Portfolios</h3>
+                <a href="#HackerNews">HackerNews</a>
+                <a href="#Reddit">Reddit</a>
+                <a href="#Twitter">Twitter</a>
+            </section>
         </section>
-        <section class="Resources df column ">
-            <h3>Resouces</h3>
-            <a href="#support">Support</a>
-            <a href="#contact">Contact</a>
-            <a href="#faq">FAQ</a>
-        </section>
-        <section class="Company df column ">
-            <h3>Company</h3>
-            <a href="#about">About</a>
-            <a href="#customer">Customers</a>
-            <a href="#blog">Blog</a>
-        </section>
-        <section class="Portfolios df column ">
-            <h3>Portfolios</h3>
-            <a href="#HackerNews">HackerNews</a>
-            <a href="#Reddit">Reddit</a>
-            <a href="#Twitter">Twitter</a>
-        </section>
+        
     </footer>
 </body>
 </html>
