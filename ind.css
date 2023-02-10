@@ -1,0 +1,151 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'DM Sans',sans-serif;
+}
+body{
+    padding:3% 7%;
+    border-style: solid;
+}
+.df{
+    display: flex;
+}
+.column{
+    flex-direction: column;
+}
+p{
+    color:rgba(0, 0, 0,0.7);
+    font-weight: 500;
+}
+img{
+    max-width: 100%;
+}
+header{
+    justify-content: space-between;
+    align-items: center;
+    border-style: solid;
+}
+.topright{
+    align-items: center;
+}
+nav{
+    border-style: solid;
+
+}
+a{
+    text-decoration: none;
+    color:rgba(0, 0, 0,0.9);
+    font-weight: 500;    
+}
+.topright a{
+    margin-right: 7%;
+}
+button{
+    background:rgb(96, 96, 231);
+    color:white;
+    border:none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14.8px;
+    padding:14px 12px;
+    white-space:nowrap;
+}
+span{
+    opacity: 0.9;
+}
+h1{
+    font-size: 2em;
+}
+.onemid{
+    border-style: solid;
+    margin-top: 4%;
+}
+.onemid h1{
+    font-weight: 700;
+    font-size: 3em;
+    width:87%;
+    border-style: solid;
+    line-height: 2.7rem;
+    margin-top: 13%;
+}
+.cap{
+    border-style: solid;
+    min-width: 50%;
+}
+.onemid p{
+    color:rgba(0, 0, 0,0.7);
+    margin:2.5% 0;
+    font-weight: 500;
+}
+.onemid figcaption{
+    color:rgba(0, 0, 0,0.7);
+    font-weight: 500;
+    margin-top: 1%;
+}
+.onemid figcaption span{
+    color:rgb(96, 96, 231);
+    font-weight: 700;
+}
+.buttonimg{
+    border-style: solid;
+    gap:15px;
+}
+.apps{
+    justify-content: space-between;
+    border-style: solid;
+}
+.apps figure{
+    border-style: solid;
+    max-width:30%;
+}
+.apps figcaption{
+    border-style: solid;
+    max-width:50%;
+}
+.apps p{
+    margin:8px 0;
+}
+.apps figcaption{
+    min-width: 50%;
+}
+.apps h1{
+    line-height: 1em;
+}
+.apps a,.phone a{
+    color:rgb(96, 96, 231);
+}
+.phone{
+    border-style: solid;
+    align-items: center;
+}
+.phone figure{
+    border-style: solid;
+    max-width:47%;
+}
+.phone img{
+    max-width:70%;
+}
+.phone figcaption{
+    border:2px red solid;
+}
+.phone h2{
+    font-weight: 700;
+    max-width:70%;
+}
+.phone p{
+    margin:8px 0;
+    max-width:90%;
+}
+footer{
+   justify-content: space-between;
+}
+.indiedown{
+    border-style: solid;
+    max-width: 27%;
+}
+.downright{
+    gap:7%;
+    border-style: solid;
+    width:53.5%;
+}
