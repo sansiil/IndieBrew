@@ -4,9 +4,15 @@
     box-sizing:border-box;
     font-family: 'DM Sans',sans-serif;
 }
-body{
+main,footer{
     padding:3% 7%;
     border-style: solid;
+}
+/*.one{
+    background-image:linear-gradient(to right,rgba(255, 192, 203,0.99),rgba(255, 192, 203,0.1));
+}*/
+footer,.one{
+    background:rgba(247, 230, 233, 0.1);
 }
 .df{
     display: flex;
@@ -29,9 +35,11 @@ header{
 .topright{
     align-items: center;
 }
+.topright img{
+    display: none;
+}
 nav{
     border-style: solid;
-
 }
 a{
     text-decoration: none;
@@ -39,17 +47,18 @@ a{
     font-weight: 500;    
 }
 .topright a{
-    margin-right: 7%;
+    margin-left:14px;
 }
 button{
     background:rgb(96, 96, 231);
     color:white;
-    border:none;
+    border-style:none;
     border-radius: 5px;
     font-weight: 500;
     font-size: 14.8px;
     padding:14px 12px;
     white-space:nowrap;
+    cursor:pointer;
 }
 span{
     opacity: 0.9;
@@ -60,6 +69,7 @@ h1{
 .onemid{
     border-style: solid;
     margin-top: 4%;
+    padding-bottom: 4%;
 }
 .onemid h1{
     font-weight: 700;
@@ -127,7 +137,7 @@ h1{
     max-width:70%;
 }
 .phone figcaption{
-    border:2px red solid;
+    border-style: solid;
 }
 .phone h2{
     font-weight: 700;
@@ -148,4 +158,51 @@ footer{
     gap:7%;
     border-style: solid;
     width:53.5%;
+}
+footer section h3{
+    margin-bottom: 7px;
+}
+footer a{
+    margin-bottom: 4px;
+}
+@media  (max-width:599px){
+    main,footer{
+        padding:3%;
+        border-style: solid;
+    }
+    .topright a{
+        display:none;
+    }
+    .topright img{
+        display: block;
+    }
+    .onemid,.apps{
+        flex-direction: column-reverse;
+    }
+    .phone,footer{
+        flex-direction: column;
+    }
+    .downright{
+        display: grid;
+        width:100%;
+        grid-template-columns: 1fr 1fr;
+        border:4px red solid;
+        column-gap: 50%;
+        padding:7% 0;
+    }
+    .indiedown{
+        max-width:100%;
+        border:2px grey solid;
+        padding-top: 7%;
+    }
+    .phone h2{
+        font-size: 2em;
+        max-width:90%;
+        border-style: solid;
+    }
+    .phone figure{
+        max-width:100%;
+        display: flex;
+        justify-content: center;
+    }
 }
