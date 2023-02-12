@@ -6,13 +6,16 @@
 }
 main,footer{
     padding:3% 7%;
-    border-style: solid;
 }
 /*.one{
     background-image:linear-gradient(to right,rgba(255, 192, 203,0.99),rgba(255, 192, 203,0.1));
 }*/
 footer,.one{
-    background:rgba(247, 230, 233, 0.1);
+    background:rgba(247, 230, 233, 0.5);
+}
+.one{
+    background: radial-gradient(circle at 0% -2%, rgba(202, 149, 159,0.5) 4%, rgba(247, 230, 233, 0.5) 34%);
+
 }
 .df{
     display: flex;
@@ -30,16 +33,12 @@ img{
 header{
     justify-content: space-between;
     align-items: center;
-    border-style: solid;
 }
 .topright{
     align-items: center;
 }
 .topright img{
     display: none;
-}
-nav{
-    border-style: solid;
 }
 a{
     text-decoration: none;
@@ -67,20 +66,17 @@ h1{
     font-size: 2em;
 }
 .onemid{
-    border-style: solid;
     margin-top: 4%;
     padding-bottom: 4%;
+    align-items: center;
 }
 .onemid h1{
     font-weight: 700;
     font-size: 3em;
-    width:87%;
-    border-style: solid;
+    max-width:90%;
     line-height: 2.7rem;
-    margin-top: 13%;
 }
 .cap{
-    border-style: solid;
     min-width: 50%;
 }
 .onemid p{
@@ -98,19 +94,15 @@ h1{
     font-weight: 700;
 }
 .buttonimg{
-    border-style: solid;
     gap:15px;
 }
 .apps{
     justify-content: space-between;
-    border-style: solid;
 }
 .apps figure{
-    border-style: solid;
     max-width:30%;
 }
 .apps figcaption{
-    border-style: solid;
     max-width:50%;
 }
 .apps p{
@@ -126,18 +118,13 @@ h1{
     color:rgb(96, 96, 231);
 }
 .phone{
-    border-style: solid;
     align-items: center;
 }
 .phone figure{
-    border-style: solid;
     max-width:47%;
 }
 .phone img{
     max-width:70%;
-}
-.phone figcaption{
-    border-style: solid;
 }
 .phone h2{
     font-weight: 700;
@@ -151,13 +138,12 @@ footer{
    justify-content: space-between;
 }
 .indiedown{
-    border-style: solid;
-    max-width: 27%;
+    max-width: 30%;
 }
 .downright{
     gap:7%;
-    border-style: solid;
     width:53.5%;
+    justify-content: flex-end;
 }
 footer section h3{
     margin-bottom: 7px;
@@ -165,10 +151,9 @@ footer section h3{
 footer a{
     margin-bottom: 4px;
 }
-@media  (max-width:599px){
+@media  (max-width:999px){
     main,footer{
-        padding:3%;
-        border-style: solid;
+        padding:5% 3%;
     }
     .topright a{
         display:none;
@@ -179,30 +164,119 @@ footer a{
     .onemid,.apps{
         flex-direction: column-reverse;
     }
+    .onemid h1{
+        max-width:100%;
+    }
     .phone,footer{
         flex-direction: column;
     }
     .downright{
-        display: grid;
+        display:grid;
         width:100%;
         grid-template-columns: 1fr 1fr;
-        border:4px red solid;
-        column-gap: 50%;
         padding:7% 0;
+        column-gap: 40%;
     }
     .indiedown{
         max-width:100%;
-        border:2px grey solid;
         padding-top: 7%;
+    }
+    .phone{
+        padding: 10% 0;
+    }
+    .phone figcaption{
+        padding-top: 10%;
     }
     .phone h2{
         font-size: 2em;
         max-width:90%;
-        border-style: solid;
     }
     .phone figure{
         max-width:100%;
         display: flex;
         justify-content: center;
     }
+    .apps figure{
+        max-width:100%;
+    }
+    .apps figcaption{
+        max-width: 100%;
+        padding-top: 7%;
+    }
+    .one{
+        padding-bottom:15%;
+    }
+}
+@media (max-width:350px){
+    .downright{
+        column-gap:normal;
+    }
+}
+@media  (min-width:709px) and (max-width:1000px){
+     .topright a{
+        display:block;
+     }
+    .topright figure img{
+        display:none;
+    }
+    button{
+        padding:19px 17px;
+        font-size:1.1em;
+    }
+    .onemid img{
+        max-width:59%;
+    }
+    .onemid figure{
+        text-align: center;
+    }
+    .buttonimg figure{
+        text-align: initial;
+    }
+    p,a,figcaption{
+        font-size:1.2em;
+    }
+    .apps{
+        flex-direction: row;
+        align-items:center;
+    }
+    .apps figcaption{
+        max-width:70%;
+    }
+    .apps figure{
+        width:30%;
+    }
+    .apps img{
+        min-height: 140px;
+    }
+    .phone{
+        flex-direction: row;
+    }
+    .phone figure{
+        max-width:47%;
+        min-height: 300px;
+    }
+    .phone figcaption{
+        max-width:62%;
+        padding:0;
+    }
+    .phone h2{
+        max-width:100%;
+    }
+    .phone p{
+        max-width:100%;
+    }
+    footer{
+        flex-direction: row;
+    }
+    footer h3{
+        font-weight:700;
+        font-size:1.5em;
+    }
+    .indiedown p{
+        max-width: 85%;
+    }
+    .downright{
+        column-gap:20%;
+    }
+    
 }
