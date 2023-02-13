@@ -1,16 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="ind.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="ind.css" />
     <title>IndieBrew Sign Up</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body class="signpage">
+    <header class="signheader df">
+      <figure class="topleft">
+        <img src="Assets/Logo.svg" alt="" />
+      </figure>
+      <nav class="top-right df">
+        <a href="ind.html">
+          <img src="Assets/Back Arrow.svg" alt="" />
+        </a>
+        <a href="ind.html">Back to Homepage</a >
+      </nav>
+    </header>
+    <main class="midsign df ">
+      <section class="midsignleft df column">
+            <h1>Create your personalised feed.</h1>
+            <figure class="df">
+            <img src="Assets/ball.png" alt="" />
+            <p>
+                <span>Over 20 resources.</span> With resources ranging from Reddit
+                to IndieHackers, we've got all of your needs covered.
+            </p>
+            </figure>
+            <figure class="df">
+            <img src="Assets/news.png" alt="" />
+            <p>
+                <span>Delivered weekly.</span> Every week at exactly Tuesday 12:00
+                P.M. EST - expect a value-packed digest right in your email.
+            </p>
+            </figure>
+            <figure class="df">
+            <img src="Assets/bulb.png" alt="" />
+            <p>
+                <span>Unlimited ideas</span> With all the ideas you'll be reading
+                about, what's stopping you from creating a sustainable startup?
+            </p>
+            </figure>
+      </section>
+      <form class="df column">
+            <h2>Create your IndieBrew Account</h2>
+            <div class="email df column">
+                <label for="">Email</label>
+                <input type="email" required name="" id="" placeholder="john@example.com">
+            </div>
+            <div class="name df column">
+                <label for="">Full Name</label>
+                <input type="text" id="" placeholder="John Dave" required>
+            </div>
+            <div class="password df column">
+                <label for="">Password</label>
+                <input type="password" required name="" id="" placeholder="At least 8 characters">
+            </div>
+            <div class="check">
+                <input type="checkbox" required name="" id="">
+                <label for="">By creating an account on IndieBrew, 
+                    you agree to the <span>Terms & Conditions</span>
+                </label>
+            </div>
+            <button>Create an Account</button>
+      </form>
+    </main>
+  </body>
 </html>
