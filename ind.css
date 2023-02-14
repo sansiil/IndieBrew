@@ -34,19 +34,20 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.topright{
-    align-items: center;
+#navbar{
+    align-items: center;   
 }
-.topright img{
+ul{
+    align-items: center;
+    gap:14px;
+}
+.toptop img{
     display: none;
 }
 a{
     text-decoration: none;
     color:rgba(0, 0, 0,0.9);
     font-weight: 500;    
-}
-.topright a{
-    margin-left:14px;
 }
 button{
     background:rgb(96, 96, 231);
@@ -151,16 +152,39 @@ footer section h3{
 footer a{
     margin-bottom: 4px;
 }
+@media (MAX-WIDTH:700px){
+    #navbar{
+        display: none;
+    }
+    #navbar,ul{
+        position:absolute;
+        top:10%;
+        left:0;
+        right:0;
+        background:rgba(255, 255, 255,0.9);
+        border-radius: 7px;
+        gap:0;
+        text-align: center;
+        flex-direction: column;  
+    }
+    #navbar a{
+        font-size: 1.2em;
+        font-weight: 700;
+        padding:7px 0;
+    }
+    #navbar a:active{
+        background:rgba(202, 149, 159,0.2);
+        width:100%;
+    }
+    .toptop img{
+        display: block;
+    }
+}
 @media  (max-width:999px){
     main,footer{
         padding:5% 3%;
     }
-    .topright a{
-        display:none;
-    }
-    .topright img{
-        display: block;
-    }
+    
     .onemid,.apps{
         flex-direction: column-reverse;
     }
@@ -213,10 +237,10 @@ footer a{
     }
 }
 @media  (min-width:709px) and (max-width:1000px){
-     .topright a{
+    #navbar,ul {
         display:block;
      }
-    .topright figure img{
+    .toptop figure img{
         display:none;
     }
     button{
